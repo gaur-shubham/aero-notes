@@ -1,4 +1,4 @@
-### AeroNotes
+# AeroNotes
 AeroNotes is a MERN stack notes application for creating, managing, and organizing personal notes. This project is also a learning platform to understand full-stack development concepts.
 
 ## Features (Current Stage)
@@ -10,7 +10,7 @@ AeroNotes is a MERN stack notes application for creating, managing, and organizi
 
 ## Getting Started
 
-### Backend
+### • Backend
 #### Install dependencies:
 `npm install`
 
@@ -19,7 +19,7 @@ AeroNotes is a MERN stack notes application for creating, managing, and organizi
 
 #### API runs on `http://localhost:5000 (or your configured port)`
 
-### Frontend
+### • Frontend
 #### Navigate to frontend folder and install dependencies:
 `npm install`
 
