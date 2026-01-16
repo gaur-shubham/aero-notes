@@ -1,7 +1,7 @@
 //connection to database
 const mongoose = require('mongoose')
 
-const mongoURI = "mongodb://localhost:27017/" 
+const mongoURI = "mongodb://localhost:27017/mern-app" 
 
 const connectToMongo = async () => {
     try {
