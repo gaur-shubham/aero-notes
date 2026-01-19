@@ -1,9 +1,9 @@
-import React from 'react'
+import UserNotes from './UserNotes';
 
 export const Home = () => {
     return (
         <div>
-            This is Home.
+            <UserNotes />
         </div>
     )
 }

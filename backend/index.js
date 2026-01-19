@@ -18,5 +18,5 @@ app.use('/api/auth', require('./routes/auth.routes'))   //auth.routes.js file in
 app.use('/api/notes', require('./routes/notes.routes')) //notes.routes.js file in routes folder
 
 app.listen(port, () => {
-    console.log(`Example app listening on port http://localhost:${port}`)
+    console.log(`Aero-Notes backend listening on port http://localhost:${port}`)
 })

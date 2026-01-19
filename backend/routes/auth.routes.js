@@ -24,7 +24,6 @@ router.post('/createuser', [
     //Check whether the user with this email already exists
     let user = await User.findOne({ email: req.body.email });
     if (user) {
-      console.log(user);
       return res.status(400).json({ error: 'Sorry, a user with this Email already exists' })
     }
     user = new User(req.body); // use 'new' keyword
@@ -88,11 +87,11 @@ router.post('/login', [
     }
   })
 
-//ROUTE 3: Get loggein user details using: POST "/api/auth/getuser". Login required
+//ROUTE 3: Get loggedIn user details using: POST "/api/auth/getuser". Login required
 //middleware is a function which is called everytime login reuqired routes are hit. in this call "fetchuser" is a middleware we are using and also it can be used while scaling the app.
-router.post('/getuser', fetchuser, async (req, res) => {
+router.get('/getuser', fetchuser, async (req, res) => {
   try {
-    userId = req.user.id;
+    const userId = req.user.id;
     const user = await User.findById(userId).select("-password")
     res.send(user)
   } catch (error) {
