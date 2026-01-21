@@ -1,9 +1,9 @@
 import UserNotes from './UserNotes';
 
-export const Home = () => {
+export const Home = ({ showAlert }) => {
     return (
         <div>
-            <UserNotes />
+            <UserNotes showAlert={showAlert} />
         </div>
     )
 }
